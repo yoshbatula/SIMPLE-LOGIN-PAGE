@@ -1,19 +1,16 @@
-const Email = admin;
-const Password = admin123;
-
 const email = document.getElementById('email');
 const password = document.getElementById('password');
-const submit = document.getElementById('submitBTN');
+const form = document.getElementById('loginForm'); 
 
-submit.addEventListener("click", function(event) {
-    event.preventDefault();
+form.addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-    const userEmail = Email.value;
-    const userPassword = Password.value;
+    const emailValue = email.value; 
+    const passwordValue = password.value;
 
-    if (userEmail === Email && userPassword === Password) {
-        window.location.href = "mainpage.html";
+    if (emailValue === 'admin' && passwordValue === 'admin123') {
+        window.location.href = 'mainpage.html';
     } else {
-        alert("Invalid email and password")
+        alert("Invalid email or password");
     }
 });
