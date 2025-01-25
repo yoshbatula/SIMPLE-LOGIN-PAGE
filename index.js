@@ -12,6 +12,6 @@ form.addEventListener('submit', function(event) {
     if (emailValue === 'admin' && passwordValue === 'admin123') {
         window.location.href = 'mainpage.html';
     } else {
-        alert("Invalid email or password"); 
+        alert("Invalid email or password");  
     }
 });
