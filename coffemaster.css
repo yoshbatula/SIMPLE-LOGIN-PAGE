@@ -23,7 +23,7 @@ body {
     margin-left: 20px;
     margin-top: 100px;
     background-color:#eee2d6;
-    width: 35rem;
+    width: 39rem;
     height: 17rem;
     border-radius: 10px;
 }
@@ -32,9 +32,25 @@ hr {
     border-top: 2px solid #e2d2c3;
 }
 
+.first-item {
+    display: inline;
+}
+
+.first-item .item-quantity {
+}
+
 .first-item .items {
     color: #b88e6a;
-    margin-left: 14px;
+    margin-left: 25px;
+}
+
+.first-item .item-name {
+    margin-left: 35px;
+}
+
+.Info {
+    display: flex;
+    align-items: right;
 }
 
 
